@@ -14,8 +14,8 @@ document.body.addEventListener("click", function(){
 	
 	if (id === "yes" || id === "no") {
 		addInArray(id, answers);
+		questionNode.innerText = questions[++i];
 	}
-	questionNode.innerText = questions[++i];
 	
 	if (i >= questions.length) {
 		yes.parentNode.removeChild(yes);
