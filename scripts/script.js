@@ -25,10 +25,17 @@ questionNode.innerText = questions[i];
 
 document.body.addEventListener("click", function(){
 	var id = event.target.id;
+	var idForm = $('.form');
 	
 	if (id === "yes" || id === "no") {
+		i++;
+		idForm.stop().fadeToggle();
+		$('.form').css("display", "none");
+		setTimeout(function(){
+			idForm.stop().fadeToggle();
+			questionNode.innerText = questions[i];
+		}, 700);
 		addInArray(id, answers);
-		questionNode.innerText = questions[++i];
 	}
 	
 	if (i >= questions.length) {
@@ -41,7 +48,10 @@ document.body.addEventListener("click", function(){
 		for (var suggestionIndex = 0; suggestionIndex < result.length; suggestionIndex += 1) {
 			resultString += result[suggestionIndex] + "\n";
 		}
-		resultNode.innerText = resultString;
+		setTimeout(function(){
+			resultNode.innerText = resultString;
+			idForm.stop().fadeToggle();			
+		}, 700);
 	}
 }, false);
 
