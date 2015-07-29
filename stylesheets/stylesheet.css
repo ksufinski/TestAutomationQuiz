@@ -121,20 +121,20 @@ a:hover {
 	} 
 }
 @media screen and (min-width: 64em) {
-  .btn {
+  .btn, .btnT {
     padding: 0.75rem 1rem; 
 	} 
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .btn {
+  .btn, .btnT {
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem; 
 	} 
 }
 
 @media screen and (max-width: 42em) {
-  .btn {
+  .btn, btnT {
     display: block;
     width: 100%;
     padding: 0.75rem;
