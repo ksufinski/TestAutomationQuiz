@@ -25,6 +25,9 @@ a {
   text-decoration: none; 
 }
 
+.result {
+	  display: block;
+}
 a:hover {
     text-decoration: underline; 
 }
@@ -162,7 +165,7 @@ a:hover {
 
 @media screen and (max-width: 42em) {
   .page-header {
-    padding: 8rem 1rem; 
+    padding: 12rem 1rem; 
 	} 
 }
 

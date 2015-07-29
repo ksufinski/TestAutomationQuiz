@@ -24,7 +24,7 @@ var answers = [];
 var i = 0;
 
 var questionNode = document.querySelector('.question');
-questionNode.innerText = questions[i];
+questionNode.innerHTML = questions[i];
 
 document.body.addEventListener("click", function(e){
 	
@@ -65,7 +65,7 @@ document.body.addEventListener("click", function(e){
 
  $('#scrollDown ').click(function(e){
  e.preventDefault();
- $('body, html').animate({ scrollTop: $('#yes').offset().top }, 1000);
+ $('body, html').animate({ scrollTop: $('#question').offset().top }, 1000);
  });
 
 
