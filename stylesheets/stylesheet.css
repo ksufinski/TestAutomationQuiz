@@ -25,9 +25,7 @@ a {
   text-decoration: none; 
 }
 
-.result {
-	  display: block;
-}
+
 a:hover {
     text-decoration: underline; 
 }
@@ -115,8 +113,9 @@ a:hover {
 
 }
 
-
-
+result {
+		text-align: center;
+}
 
 @media screen and (min-width: 64em) {
   .btnT {
@@ -147,8 +146,11 @@ a:hover {
       margin-top: 1rem;
       margin-left: 0; 
 	} 
+	 .btnT + .btnT {
+      margin-top: 1rem;
+      margin-left: 0; 
+	}
 }
-
 
 
 @media screen and (min-width: 64em) {
