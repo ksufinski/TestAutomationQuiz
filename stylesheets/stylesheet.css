@@ -29,7 +29,7 @@ a:hover {
     text-decoration: underline; 
 }
 	 
-.btn, .btn-github {
+.btn {
   display: inline-block;
   margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.7);
@@ -41,17 +41,85 @@ a:hover {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; 
 }
 
+.btnT {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 222, 0.5);
+  border-color: rgba(255, 255, 255, 0.6);
+	
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; 
+}
+
+.btnT:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(0, 0, 222, 0.8);
+  border-color: rgba(255, 255, 255, 0.3); 
+}
+
+
+
+
+.btn-github {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+
+}
+
 .btn + .btn {
     margin-left: 1rem; 
 }
 
-.btn:hover, .btn-github:hover {
+.btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(220, 220, 220, 0.8);
   border-color: rgba(255, 255, 255, 0.3); 
 }
 
+.page-header {
+	color: #fff;
+	text-align: center;
+	background-color: #33CCFF;
+	background-attachment: scroll;
+	background-image: url(../image/head.jpg);
+	background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+.site-footer {
+	color: #fff;
+	text-align: center;
+	background-color: rgba(27, 114, 142, 0.6);
+	background-attachment: scroll;
+	background-position: center center;
+	background-image: url(../image/footer.jpg);
+		height:100px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+
+
+
+@media screen and (min-width: 64em) {
+  .btnT {
+    padding: 0.9rem 2rem; 
+	} 
+}
 @media screen and (min-width: 64em) {
   .btn {
     padding: 0.75rem 1rem; 
@@ -78,28 +146,23 @@ a:hover {
 	} 
 }
 
-.page-header {
-  color: #fff;
-  text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); 
-}
+
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 5rem 6rem; 
-	} 
+    padding: 18rem 2rem; 
+	}
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
-    padding: 3rem 4rem; 
+    padding: 12rem 4rem; 
 	} 
 }
 
 @media screen and (max-width: 42em) {
   .page-header {
-    padding: 2rem 1rem; 
+    padding: 8rem 1rem; 
 	} 
 }
 
@@ -126,13 +189,21 @@ a:hover {
 	} 
 }
   
-.main-content{
+.main-content {
 	text-align: center;
+	vertical-align: center;
+	height:800px;
+	line-height: 1.5;
 }
 
+.form{
+margin-top:300px;
+}
 .main-content :first-child {
   margin-top: 0; 
 }
+
+
   
 .main-content img {
   max-width: 100%; 
@@ -146,7 +217,15 @@ a:hover {
 }
   
 .main-content p {
+
   margin-bottom: 1em; 
+}
+
+p {
+		font-size:20px;
+		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin-bottom:2rem;
+
 }
 
 @media screen and (min-width: 64em) {
